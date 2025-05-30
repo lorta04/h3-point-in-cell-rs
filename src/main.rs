@@ -13,7 +13,6 @@ fn convert_h3_to_lat_lon(h3_cell_str: &str) -> Vec<LatLng> {
 
     println!("\nH3 Cell Geographic Boundary (Lat, Lon degrees):");
     for (i, vertex_ll_ref) in boundary_geo_h3o.iter().enumerate() {
-        // Dereference &LatLng to LatLng to call methods taking `self`. LatLng is Copy.
         let vertex_ll = *vertex_ll_ref;
         println!(
             "  Vertex {}: ({:.6}, {:.6})",
