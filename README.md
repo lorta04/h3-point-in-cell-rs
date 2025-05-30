@@ -10,6 +10,8 @@ This work is inspired by the concepts presented in "[Zero-Knowledge Location Pri
 
 The primary motivation is to explore an implementation for verifying point-in-H3-cell containment in a manner that could be adapted to be **zero-knowledge (ZK) friendly**. A key aspect for ZK circuits is the avoidance of floating-point arithmetic. While this Rust prototype currently uses `f64` for projections and calculations, the geometric approach (point-in-polygon with projected coordinates) is a step towards a system that could potentially be implemented with fixed-point arithmetic inside a ZK circuit.
 
+The vibe-coded Python prototype of this implementation can be found in [jupyter/projection.ipynb](jupyter/projection.ipynb).
+
 ## Key Characteristics and Limitations
 
 This program is a **prototype** and demonstrates the core geometric check. It has the following characteristics and known limitations:
