@@ -1,0 +1,8 @@
+[package]
+name = "h3-point-in-cell-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+h3o = "0.8.0"
+proj = "0.30.0"
